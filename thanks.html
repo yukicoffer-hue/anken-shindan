@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>精密診断のご予約完了</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@700;900&display=swap">
+<link rel="stylesheet" href="style.css">
+<script src="config.js"></script>
+</head>
+<body>
+<main class="wrap">
+
+  <section>
+    <p class="eyebrow">ご予約ありがとうございます</p>
+    <h1>個別の精密診断、<br>お待ちしています。</h1>
+    <p>TimeRexから、日時とオンライン面談のURLが書かれたメールが届きます。届いていない場合は、迷惑メールのフォルダも確かめてください。</p>
+  </section>
+
+  <section class="box" id="bonus">
+    <h3 id="b-title"></h3>
+    <p class="small" id="b-text"></p>
+    <a class="btn" id="b-link" href="professional-os.pdf" target="_blank" rel="noopener" hidden>「プロフェッショナルのOS」を開く（PDF・15ページ）</a>
+    <p class="note" id="b-note" hidden>資料の最後のページに、当日までにメモしておくと話が早く進む3つのことをまとめています。</p>
+  </section>
+
+  <section class="box">
+    <h3>当日までに、3つだけ準備してください</h3>
+    <ol class="steps">
+      <li><span><b>カレンダーに入れる</b>TimeRexのメールにある「カレンダーに追加」を押しておくと、当日忘れません。</span></li>
+      <li><span><b>カメラとPCを用意する</b>顔を見ながら話します。PCがない方はスマホでも大丈夫です。</span></li>
+      <li><span><b>診断コードを手元に</b><span id="t-code"></span>当日、このコードを見ながら話を進めます。</span></li>
+    </ol>
+  </section>
+
+  <section class="box">
+    <h3>当日の流れ（<span id="t-min"></span>分）</h3>
+    <ol class="steps">
+      <li><span><b>今と理想を聞く</b>診断で選んだ不安と、変えたいことを聞きます。</span></li>
+      <li><span><b>あなた専用の道筋を出す</b>今週応募できる実案件と、継続案件までの順番を決めます。</span></li>
+      <li><span><b>疑問をその場で解消</b>どんな小さな疑問や不安も、そのまま聞いてください。</span></li>
+    </ol>
+  </section>
+
+  <section class="box" id="jobs">
+    <h3>面談までに、目を通しておいてほしい案件</h3>
+    <p class="small" id="j-lead"></p>
+    <ul class="examples" id="j-list"></ul>
+    <p class="note">クラウドワークスで「動画編集」を新着順で見ると、同じような案件が毎日出ています。気になったものを1件メモしておくと、当日の話がぐっと具体的になります。</p>
+  </section>
+
+  <section class="soft">
+    <h3>日程が合わなくなったら</h3>
+    <p class="small">TimeRexのメールから、日時の変更やキャンセルができます。連絡なしで来られないと、ほかの方の枠が1つ無駄になってしまうので、早めに変更してもらえると助かります。</p>
+  </section>
+
+  <footer><p id="f-x"></p></footer>
+</main>
+<script>
+(() => {
+  const C = window.LP_CONFIG, LEVELS = window.LP_LEVELS, S = window.lpStore, track = window.lpTrack;
+  const $ = (id) => document.getElementById(id);
+  const r = S.get('result');
+  const deadline = S.get('deadline');
+  const now = Date.now();
+  const inTime = deadline && now <= deadline;
+
+  $('t-min').textContent = C.meetingMinutes;
+  if (r && r.code) { const b = document.createElement('b'); b.textContent = r.code; $('t-code').append(b, '　'); }
+
+  if (inTime) {
+    $('b-title').textContent = '特典「プロフェッショナルのOS」をお受け取りください';
+    $('b-text').textContent = '期限内のご予約でした。当日の精密診断の前に、読んでおくと話がスムーズです。';
+    $('b-link').hidden = false;
+    $('b-note').hidden = false;
+    S.set('bonus_given', now);
+  } else if (S.get('bonus_given')) {
+    $('b-title').textContent = '特典「プロフェッショナルのOS」';
+    $('b-text').textContent = 'すでにお受け取り済みです。もう一度開く場合はこちらから。';
+    $('b-link').hidden = false;
+    $('b-note').hidden = false;
+  } else {
+    $('b-title').textContent = '特典の受け取り期限は過ぎていました';
+    $('b-text').textContent = '「プロフェッショナルのOS」は、診断結果が出てから' + C.bonusMinutes + '分以内にご予約いただいた方へのお渡しです。精密診断の内容は変わりませんので、安心してお越しください。';
+  }
+
+  if (r && LEVELS[r.now]) {
+    const lv = r.pot || r.now;
+    $('j-lead').textContent = 'あなたのポテンシャル（Lv' + lv + '：' + LEVELS[lv].name + '）の実際の案件です。';
+    LEVELS[lv].ex.forEach(([t, p]) => {
+      const li = document.createElement('li');
+      const a = document.createElement('span'); a.textContent = t;
+      const b = document.createElement('span'); b.className = 'price'; b.textContent = p;
+      li.append(a, b); $('j-list').append(li);
+    });
+  } else {
+    $('jobs').hidden = true;
+  }
+
+  if (C.xAccount) {
+    const a = document.createElement('a');
+    a.href = 'https://x.com/' + encodeURIComponent(C.xAccount); a.rel = 'noopener'; a.target = '_blank';
+    a.textContent = '@' + C.xAccount;
+    $('f-x').append('面談までのあいだ、実際の案件の解説はXの ', a, ' で毎日出しています。');
+  }
+  track('booking_complete', { bonus: !!inTime, code: r && r.code });
+})();
+</script>
+</body>
+</html>

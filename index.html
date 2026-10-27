@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex"><!-- 運用開始前。公開したら外す -->
+<title>動画編集の案件診断</title>
+<meta name="description" content="在宅で動画編集・SNS運用を始めたい20〜30代へ。クラウドワークスに実際に出ている案件をもとに、今のあなたが取れる案件のレベルと単価を3分で出します。">
+<meta property="og:title" content="今のあなたが取れる動画編集の案件は、1本いくら？">
+<meta property="og:description" content="実際の募集案件をもとに、今のレベルと、伸ばせば届く月5〜40万円の継続案件までを3分で診断。">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@700;900&display=swap">
+<link rel="stylesheet" href="style.css">
+<script src="config.js"></script>
+</head>
+<body>
+<main class="page">
+
+<!-- ================= ページ1：入口 ================= -->
+<div id="top">
+  <div class="masthead pad"><span>在宅ワーク 案件診断</span><span class="free">無料・登録なし</span></div>
+
+  <div class="photo">
+    <img data-p="photo" src="face-illust.webp" alt="" width="1672" height="941">
+    <div class="record"><small data-p="recordLabel"></small><b><span data-p="recordValue" style="font-size:inherit"></span><span data-p="recordUnit"></span></b></div>
+    <div class="nametag"><b data-p="name"></b><span data-p="title"></span></div>
+  </div>
+
+  <section class="lead pad">
+    <p class="to">在宅で動画編集・SNS運用を始めたい、<br>20〜30代のあなたへ。</p>
+    <h1><span class="s">今のあなたが取れる<br>案件は、</span><br><span class="l">1本いくら？</span></h1>
+    <p>クラウドワークスに今出ている募集をもとに、今のあなたで届く案件と単価、伸ばせば届く<b>月5〜40万円の継続案件</b>までを、10の質問で出します。</p>
+    <div class="facts">
+      <div><b>実案件</b><span>実際の市場の<br>案件から算出</span></div>
+      <div><b>3分</b><span>登録なしで<br>結果まで</span></div>
+      <div><b>15ページ</b><span>予約した人に<br>特典資料</span></div>
+    </div>
+    <div class="cta">
+      <p class="hint">＼ タップで答えるだけ。約3分 ／</p>
+      <button class="btn" id="start" type="button">無料で診断する</button>
+    </div>
+  </section>
+
+  <!-- レオ型1：問題提起 -->
+  <section class="sec pad stack">
+    <div class="head"><span class="label">■ こんな人のための診断です</span><h2>ひとつでも当てはまったら、<br>まず診断を。</h2></div>
+    <ul class="checks">
+      <li><button type="button" aria-pressed="false">在宅で、本当に稼げるのかわからない</button></li>
+      <li><button type="button" aria-pressed="false">副業の詐欺や、高額な勧誘が怖い</button></li>
+      <li><button type="button" aria-pressed="false">続けられる時間があるか不安</button></li>
+      <li><button type="button" aria-pressed="false">何から始めればいいか、決められない</button></li>
+    </ul>
+  </section>
+
+  <section class="sec pad stack quote">
+    <p class="big">「誰でも月100万」とは、<br><span class="green">僕は言いません。</span></p>
+    <p class="small">僕はその言葉を信じて、副業詐欺で400万円を失ったからです。この診断は、実際に出ている募集の数字だけで作りました。</p>
+    <p class="who">― <span data-p="name"></span></p>
+  </section>
+
+  <!-- サイドFIRE -->
+  <section class="sec fire pad">
+    <div class="head"><span class="label">■ <span data-p="title"></span>、ってどういうこと？</span><h2>会社を辞めるでも、<br>一生働くでもない。<br><em>第3の働き方。</em></h2></div>
+    <p class="body"><b>サイドFIRE</b>は、生活費を「資産からの収入」と「好きな仕事の収入」の2本でまかなって、会社に縛られずに働く状態のことです。全部を資産でまかなう完全なFIREより、ずっと少ない資産で届きます。</p>
+    <div class="compare" role="table" aria-label="会社員・完全FIRE・サイドFIREの比較">
+      <span class="th"></span><span class="th">会社員</span><span class="th">完全FIRE</span><span class="th side">サイドFIRE</span>
+      <span class="rowh">収入源</span><span>給料だけ</span><span>資産だけ</span><span class="side">資産＋仕事</span>
+      <span class="rowh">働く時間</span><span>会社が決める</span><span>働かない</span><span class="side">自分で決める</span>
+      <span class="rowh last">必要な資産</span><span class="last">―</span><span class="last">生活費の約25年分</span><span class="side last">その一部でいい</span>
+    </div>
+    <p class="fine">※完全FIREの目安は、資産を年4%ずつ取り崩す考え方（4%ルール）による一般的な目安です。</p>
+    <div class="model">
+      <span>たとえば、こんな形（1か月のモデルケース）</span>
+      <dl>
+        <dt>月収</dt><dd class="total">70万円</dd>
+        <dt>＝ 資産からの収入</dt><dd>30万円</dd>
+        <dt>＋ 在宅の継続案件（動画編集など）</dt><dd class="work">40万円</dd>
+      </dl>
+      <p class="fine">※わかりやすくするための例で、<span data-p="name"></span>本人の金額ではありません。資産からの収入30万円は、9,000万円の資産を年4%で取り崩した場合の目安です。在宅の継続案件40万円は、相場表のLv5の上限にあたります。</p>
+    </div>
+    <p>つまり、サイドFIREの「仕事の収入」の柱になるのが、<b style="color:var(--marker)">月単位で任される在宅の継続案件</b>です。そこに届くまでの距離を、まず診断で測ります。</p>
+  </section>
+
+  <!-- 相場表 -->
+  <section class="sec pad stack">
+    <div class="head"><span class="label">■ 動画編集の案件、いまの相場</span><h2>1本いくらで、<br>どこまで行けるか。</h2></div>
+    <div class="rates" id="rates-top"></div>
+    <p class="small">Lv1を1本ずつ受け続けても、月5万円には毎月25〜100本が要ります。だから目指すのは、<b class="mark">月単位で任される「継続案件」</b>です。</p>
+    <p class="note">出典：<span class="f-date"></span>時点のクラウドワークス新着案件の報酬欄。将来の収入を約束するものではありません。</p>
+  </section>
+
+  <!-- 診断結果の見本 -->
+  <section class="sec sheet-wrap pad">
+    <div class="head"><span class="label">■ 診断結果の例</span><h2>10問のあと、<br>こんな結果が出ます。</h2></div>
+    <div class="slip">
+      <div class="top"><b>案件診断書</b><span>見本</span></div>
+      <p class="title">あなたは今Lv2。伸ばせばLv4まで届きます</p>
+      <dl>
+        <dt>今のあなた</dt><dd><b>Lv2</b>　企画込みのショート（1本3,000円〜）</dd>
+        <dt>届く上限</dt><dd><b>Lv4</b>　継続の編集・SNS運用</dd>
+      </dl>
+      <p class="amount">月5万円〜</p>
+      <p class="why">週10〜20時間の作業時間なら、ここが現実的な上限です。</p>
+      <div class="hanko" aria-hidden="true">診断<br>済</div>
+    </div>
+    <p class="note">※見本です。結果は回答によって変わります。</p>
+  </section>
+
+  <!-- この診断をつくった理由 -->
+  <section class="reason">
+    <div class="ph">
+      <img data-p="photo" src="face-illust.webp" alt="" width="1672" height="941">
+    </div>
+    <div class="cap"><small>■ この診断をつくった理由</small><span><span data-p="name"></span>から、あなたへ</span></div>
+    <div class="txt">
+      <p><b style="font-size:17px">僕はSNSの副業詐欺で、400万円を失いました。</b></p>
+      <p>「誰でも月100万」という言葉を、確かめずに信じたからです。そこから営業の仕事で、毎月決まった額を返し続けて、<b data-p="title"></b>までたどり着きました。</p>
+      <p>だから僕は、<b>夢ではなく、実際に出ている募集の数字だけ</b>で話します。この診断も、クラウドワークスの実際の案件から作りました。</p>
+      <p class="sign"><span data-p="name" style="background:none;color:#fff;font-size:14px;padding:0"></span><span data-p="title"></span></p>
+    </div>
+  </section>
+
+  <section class="sec pad cta">
+    <p class="hint">＼ 登録なし。約3分 ／</p>
+    <button class="btn" id="start2" type="button">無料で診断する</button>
+  </section>
+</div>
+
+<!-- ================= 診断（レオ型1：問題提起→判定→認知→強み→理想） ================= -->
+<section class="quiz pad" id="quiz" hidden aria-live="polite">
+  <p class="qband"><span data-p="name"></span>の案件診断</p>
+  <div class="qhead"><span class="qstage" id="qstage"></span><span class="qleft">あと <b id="qleft">10</b> 問</span></div>
+  <div class="bar"><i id="qbar"></i></div>
+  <h2 id="qtext"></h2>
+  <div class="opts" id="qopts"></div>
+  <button class="back" id="qback" type="button" hidden>← ひとつ戻る</button>
+</section>
+
+<!-- ================= ページ2：結果（レオ型3：いちばん長いページ） ================= -->
+<div id="result" hidden>
+  <section class="sheet-wrap pad">
+    <div class="slip">
+      <div class="top"><b>案件診断書</b><span id="r-no"></span></div>
+      <p class="title" id="r-title"></p>
+      <dl>
+        <dt>今のあなた</dt><dd><b id="r-now-lv"></b>　<span id="r-now-name"></span>（<span id="r-now-price"></span>）</dd>
+        <dt>届く上限</dt><dd><b id="r-pot-lv"></b>　<span id="r-pot-name"></span></dd>
+      </dl>
+      <p class="amount"><span id="r-pot-price"></span><span id="r-pot-unit" style="font-size:14px;color:var(--sub);font-weight:700"></span></p>
+      <p class="why" id="r-why"></p>
+      <div class="hanko" aria-hidden="true">診断<br>済</div>
+    </div>
+    <div class="voice">
+      <img data-p="photo" src="face-illust.webp" alt="" width="1672" height="941">
+      <div><small><span data-p="name"></span>から</small><p id="r-voice"></p></div>
+    </div>
+    <p class="note" id="r-source"></p>
+  </section>
+
+  <section class="sec pad stack">
+    <div class="head"><span class="label">■ 今のあなたで応募できる実案件</span></div>
+    <ul class="examples" id="r-now-ex"></ul>
+    <div class="head" style="margin-top:12px"><span class="label">■ 届く上限の実案件</span></div>
+    <ul class="examples" id="r-pot-ex"></ul>
+  </section>
+
+  <!-- レオ型3：最初の選択肢を軽く否定 -->
+  <section class="sec pad">
+    <div class="deny">
+      <b class="t">ただし、1本ずつ受け続けるだけでは届きません。</b>
+      <p class="small">Lv1の案件は1本500〜2,000円。月5万円にするには、毎月25〜100本を自分で探して、応募して、納品し続ける必要があります。だから目指すのは、<b class="mark">月単位で任される「継続案件」</b>です。</p>
+    </div>
+  </section>
+
+  <section class="sec pad stack">
+    <div class="gaps"><b>今と上限のあいだにあるもの</b><ul id="r-gap"></ul></div>
+    <div class="head"><span class="label">■ あなたの位置</span></div>
+    <div class="rates" id="rates-me"></div>
+  </section>
+
+  <!-- レオ型3：「はい」と答えたくなる質問。はいは右 -->
+  <section class="sec pad" id="yesq">
+    <div class="head"><span class="label">■ 最後に3つだけ</span><h2>あなたの答えを、<br>教えてください。</h2></div>
+    <div class="yq"><p>1本ずつではなく、月単位で任される働き方がいいですか？</p>
+      <div class="yn" data-q="monthly"><button type="button" aria-pressed="false" data-v="no">いいえ</button><button type="button" aria-pressed="false" data-v="yes">はい</button></div></div>
+    <div class="yq"><p>月5万円以上の継続案件を取れるようになりたいですか？</p>
+      <div class="yn" data-q="highprice"><button type="button" aria-pressed="false" data-v="no">いいえ</button><button type="button" aria-pressed="false" data-v="yes">はい</button></div></div>
+    <div class="yq"><p>いずれは、会社に頼らないフリーランスとして働きたいですか？</p>
+      <div class="yn" data-q="freelance"><button type="button" aria-pressed="false" data-v="no">いいえ</button><button type="button" aria-pressed="false" data-v="yes">はい</button></div></div>
+  </section>
+
+  <!-- 精密診断の案内（レオ型5：商談と言わず、得をする名前） -->
+  <div id="pitch" hidden>
+    <section class="sec pad stack">
+      <div class="offer">
+        <span class="kicker">― 診断のあとに ―</span>
+        <h2><span data-p="name"></span>と話す<br><span class="green mark">「個別の精密診断」</span></h2>
+        <p class="spec"><span class="p-min"></span>分・無料・オンライン</p>
+        <ol class="steps">
+          <li><span><b>今と理想を聞く。</b>診断で選んだ不安と、変えたいことを深く聞きます。</span></li>
+          <li><span><b>あなた専用の道筋を出す。</b>今週応募できる実案件と、継続案件までの順番を決めます。</span></li>
+          <li><span><b>疑問をその場で解消する。</b>どんな小さな不安も、そのまま聞いてください。</span></li>
+        </ol>
+      </div>
+      <div class="bonus">
+        <div class="cover" role="img" aria-label="特典資料の表紙：月収30万を叶える「プロフェッショナルのOS」"><span class="c-top">特典資料</span><b>月収30万を叶える<br>プロフェッショナルのOS</b><span class="c-band">全15ページ</span></div>
+        <p><b>予約した人に、特典</b><br>月収30万を叶える<br>「プロフェッショナルのOS」（全15ページ）</p>
+      </div>
+      <!-- 本当の期限：期限後は実際に渡さない -->
+      <div class="timer" id="timer"><span class="t-label" id="t-label"></span><span class="clock" id="t-clock">--:--</span></div>
+      <p class="note" id="t-note"></p>
+      <p class="note" style="font-size:12px">担当は<span data-p="name"></span>1人です。予約できるのは、カレンダーに出ている空き枠だけです。</p>
+      <!-- レオ型1：申し込み直前のハードル -->
+      <div class="gate">
+        <b>精密診断は、本気で在宅の仕事を作りたい方だけにしています。</b>
+        <ul>
+          <li>当日はカメラをオンにしてお話しできる方</li>
+          <li>今、ほかのスクールや講座で学んでいる最中ではない方</li>
+          <li>すでに法人やフリーランスとして十分な売上がある方は、内容が物足りない可能性があります</li>
+        </ul>
+      </div>
+      <!-- レオ型3：左グレー・右緑 -->
+      <div class="cta">
+        <p class="hint">＼ 予約はカレンダーから選ぶだけ ／</p>
+        <div class="ctas">
+          <button class="btn sub" id="self" type="button">自分で探す</button>
+          <button class="btn" id="go" type="button">無料で予約する</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="sec pad stack" id="book" hidden>
+    <div class="head"><span class="label">■ 個別の精密診断を予約する</span></div>
+    <div class="code"><span class="small">予約の備考欄にこのコードを書いてください</span><b id="r-code"></b><button id="copy" type="button">コピー</button></div>
+    <div id="timerex_wrap"></div>
+  </section>
+
+  <section class="sec pad stack" id="soft" hidden>
+    <div class="gaps">
+      <b>まずは自分で1件目を探すなら</b>
+      <ul>
+        <li>クラウドワークスで「動画編集」を新着順で見て、<span id="soft-lv"></span>の案件に応募してみてください。</li>
+        <li>応募数が少なく、報酬と本数が書いてある募集から選ぶと、返事をもらいやすくなります。</li>
+      </ul>
+      <p class="small">気が変わったら、いつでも上の「無料で予約する」から予約できます。</p>
+    </div>
+  </section>
+
+  <section class="sec pad stack">
+    <p class="caution">契約の前に、有料の研修や教材の購入を求められる募集は、仕事ではありません。応募の前に確かめてください。</p>
+    <button class="btn sub" id="retry" type="button">もう一度診断する</button>
+  </section>
+</div>
+
+<footer class="foot pad"><span>在宅ワーク 案件診断</span><span id="f-x"></span></footer>
+</main>
+
+<!-- 共通点：予約ボタンがいつでも見える -->
+<div class="dock" id="dock" hidden>
+  <div class="in" id="d-in"><div class="left" id="d-left"></div><button class="btn" id="d-btn" type="button"></button></div>
+</div>
+
+<script>
+(() => {
+  const C = window.LP_CONFIG, LEVELS = window.LP_LEVELS, S = window.lpStore, track = window.lpTrack;
+  const P = C.persona;
+  const $ = (id) => document.getElementById(id);
+
+  // ---- 人物・設定の差し込み ----
+  document.querySelectorAll('[data-p]').forEach((el) => {
+    const k = el.dataset.p;
+    if (k === 'photo') { el.src = P.photo; el.alt = P.name; } else { el.textContent = P[k]; }
+  });
+  document.querySelectorAll('.f-date').forEach((el) => { el.textContent = C.dataDate; });
+  document.querySelectorAll('.p-min').forEach((el) => { el.textContent = C.meetingMinutes; });
+  if (C.xAccount) {
+    const a = document.createElement('a');
+    a.href = 'https://x.com/' + encodeURIComponent(C.xAccount); a.rel = 'noopener'; a.target = '_blank';
+    a.textContent = 'X：@' + C.xAccount;
+    $('f-x').append(a);
+  }
+
+  // ---- チェックリスト：タップでチェックが入る ----
+  document.querySelectorAll('.checks button').forEach((b) => {
+    b.addEventListener('click', () => b.setAttribute('aria-pressed', String(b.getAttribute('aria-pressed') !== 'true')));
+  });
+
+  // ---- 相場表（入口と結果で共通） ----
+  function drawRates(box, now, pot) {
+    box.replaceChildren();
+    const head = document.createElement('div');
+    head.className = 'tr thead';
+    ['レベル', '案件の中身', '単価'].forEach((t, k) => { const s = document.createElement('span'); s.textContent = t; if (k === 2) s.style.textAlign = 'right'; head.append(s); });
+    box.append(head);
+    [1, 2, 3, 4, 5].forEach((lv) => {
+      const r = document.createElement('div');
+      r.className = 'tr' + (lv === 5 ? ' top' : '');
+      const a = document.createElement('span'); a.className = 'lv'; a.textContent = lv;
+      const b = document.createElement('span'); b.textContent = LEVELS[lv].name;
+      if (lv === now) { const t = document.createElement('span'); t.className = 'tag'; t.textContent = '今'; b.append(t); }
+      if (lv === pot && pot !== now) { const t = document.createElement('span'); t.className = 'tag pot'; t.textContent = '上限'; b.append(t); }
+      const c = document.createElement('span'); c.className = 'yen'; c.textContent = (lv >= 4 ? '月' : '') + LEVELS[lv].price;
+      r.append(a, b, c); box.append(r);
+    });
+  }
+  drawRates($('rates-top'));
+
+  const QUESTIONS = [
+    { key: 'worry', stage: 'STEP 1 ｜ あなたのこと', q: '在宅ワークで、いちばん不安なことは？', opts: [
+      ['本当に稼げるのかわからない', 'earn'], ['詐欺や高額な勧誘が怖い', 'scam'], ['続けられる時間があるか', 'time'], ['自分にスキルがない', 'skill']] },
+    { key: 'change', stage: 'STEP 1 ｜ あなたのこと', q: '今の働き方で、一番変えたいことは？', opts: [
+      ['収入', 'income'], ['働く時間', 'hours'], ['働く場所', 'place'], ['職場の人間関係', 'people']] },
+    { key: 'exp', stage: 'STEP 2 ｜ 今のレベル', q: '動画編集の経験は？', opts: [
+      ['まったくない', 0], ['スマホやPCで少し触ったことがある', 1], ['お金をもらって納品したことがある', 2]] },
+    { key: 'soft', stage: 'STEP 2 ｜ 今のレベル', q: '使える編集ソフトは？', opts: [
+      ['まだ何も使えない', 0], ['CapCut・Vrewなど手軽なアプリ', 1], ['Premiere Pro・DaVinci Resolve・Final Cut Pro', 2]] },
+    { key: 'pc', stage: 'STEP 2 ｜ 今のレベル', q: '編集に使えるパソコンは？', opts: [
+      ['持っていない（スマホだけ）', 0], ['ノートPCはあるが、性能はわからない', 1], ['動画編集ができるPCがある', 2]] },
+    { key: 'time', stage: 'STEP 2 ｜ 今のレベル', q: '1週間で、作業に使える時間は？', opts: [
+      ['5時間未満', 0], ['5〜10時間', 1], ['10〜20時間', 2], ['20時間以上', 3]] },
+    { key: 'know', stage: 'STEP 3 ｜ 働き方', q: '月単位で任される「継続案件」という働き方を知っていますか？', opts: [
+      ['知っていて、それを目指している', 'aim'], ['聞いたことはある', 'heard'], ['はじめて知った', 'new']] },
+    { key: 'value', stage: 'STEP 3 ｜ 働き方', q: '案件を選ぶとき、一番大事だと思うものは？', opts: [
+      ['1本あたりの単価', 'price'], ['毎月続けて任されること', 'cont'], ['実績として人に見せられること', 'port']] },
+    { key: 'goal', stage: 'STEP 4 ｜ なりたい姿', q: '在宅ワークで、月にいくら稼げたら嬉しい？', opts: [
+      ['3万円', 3], ['5万円', 5], ['10万円', 10], ['20万円以上', 20]] },
+    { key: 'when', stage: 'STEP 4 ｜ なりたい姿', q: 'いつまでに、そうなりたい？', opts: [
+      ['3か月以内', 3], ['半年以内', 6], ['1年以内', 12], ['まだ決めていない', 0]] },
+  ];
+
+  let i = 0;
+  const ans = {}, yn = {};
+  let result = null, code = '', tick = null, deadline = null;
+  let phase = 'top';
+
+  // ---- 画面下の固定バー ----
+  let startVisible = true;
+  function drawDock() {
+    const dock = $('dock'), left = $('d-left'), btn = $('d-btn');
+    left.replaceChildren();
+    if (phase === 'top') { dock.hidden = startVisible; $('d-in').classList.add('solo'); btn.textContent = '無料で診断する'; return; }
+    if (phase === 'quiz') { dock.hidden = true; return; }
+    $('d-in').classList.remove('solo');
+    dock.hidden = !$('book').hidden;
+    const ms = deadline - Date.now();
+    // 特典の案内が出るまでは、何の期限かわからないので時計を出さない
+    if (ms > 0 && !$('pitch').hidden) {
+      const b = document.createElement('b'); b.textContent = fmt(ms);
+      left.append('特典の受け取り期限', b);
+    } else { $('d-in').classList.add('solo'); }
+    btn.textContent = $('pitch').hidden ? 'あと3問に答える' : '無料で予約する';
+  }
+  new IntersectionObserver((es) => { startVisible = es[0].isIntersecting; drawDock(); }).observe($('start'));
+  $('d-btn').addEventListener('click', () => {
+    if (phase === 'top') { startQuiz(); return; }
+    if ($('pitch').hidden) { $('yesq').scrollIntoView({ behavior: 'smooth', block: 'start' }); } else { showBook(); }
+  });
+  const fmt = (ms) => String(Math.floor(ms / 60000)).padStart(2, '0') + ':' + String(Math.floor(ms % 60000 / 1000)).padStart(2, '0');
+
+  // ---- 診断 ----
+  function showQ() {
+    const q = QUESTIONS[i];
+    $('qleft').textContent = QUESTIONS.length - i;
+    $('qbar').style.width = (i / QUESTIONS.length * 100) + '%';
+    $('qstage').textContent = q.stage;
+    $('qtext').textContent = q.q;
+    const box = $('qopts');
+    box.replaceChildren();
+    q.opts.forEach(([label, v]) => {
+      const b = document.createElement('button');
+      b.className = 'opt'; b.type = 'button'; b.textContent = label;
+      b.addEventListener('click', () => { ans[q.key] = v; if (i < QUESTIONS.length - 1) { i++; showQ(); } else { finish(); } });
+      box.append(b);
+    });
+    $('qback').hidden = i === 0;
+  }
+  function startQuiz() {
+    phase = 'quiz';
+    $('quiz').hidden = false; $('result').hidden = true; $('top').hidden = true;
+    i = 0; showQ(); drawDock();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    track('diagnosis_start');
+  }
+  $('start').addEventListener('click', startQuiz);
+  $('start2').addEventListener('click', startQuiz);
+  $('qback').addEventListener('click', () => { if (i > 0) { i--; showQ(); } });
+
+  function judge(a) {
+    const skill = a.exp + a.soft;
+    let now = skill <= 1 ? 1 : skill === 2 ? 2 : skill === 3 ? 3 : 4;
+    if (a.pc === 0) now = 1;
+    const pot = (a.time === 3 && now >= 3) ? 5 : Math.max(now, [3, 4, 4, 4][a.time]);
+    const gaps = [];
+    if (a.pc === 0) gaps.push('動画編集ができるPC。スマホだけで受けられる案件は、ほぼLv1に限られます。');
+    if (a.soft < 2 && pot >= 3) gaps.push('Premiere Proなどのソフト。Lv3以上の募集は、ソフトが指定されていることが多いです。');
+    if (a.exp < 2) gaps.push('見せられる作品（ポートフォリオ）を3本。応募のときに「実績」として出せるものです。');
+    if (pot >= 4) gaps.push('継続の相談ができる力。Lv4は、1本ずつではなく月単位で任される案件です。');
+    if (pot >= 5) gaps.push('企画・進行・数字をまとめる力。Lv5は、編集だけでなくチャンネルやSNS運用そのものを任される案件です。');
+    if (a.time === 0) gaps.push('週5時間以上の作業時間。今の時間だと、継続案件の本数をこなすのは難しいです。');
+    if (!gaps.length) gaps.push('今の条件は十分です。あとは応募の数と、提案文の質です。');
+    return { now, pot, gaps };
+  }
+  const WORRY = {
+    earn: '「本当に稼げるのか」は、実際の募集の単価で見るのが一番確かです。この診断書の数字は、すべて実在する募集のものです。',
+    scam: '「詐欺が怖い」は正しい感覚です。僕はそれを確かめずに400万円を失いました。ページ下の注意書きも読んでください。',
+    time: '時間が限られているなら、なおさら1本ずつより継続案件の方が効率がいいです。',
+    skill: 'スキルは後から付きます。先に「どのレベルの案件を目指すか」を決めた方が、学ぶ順番を間違えません。',
+  };
+  function list(ul, lv) {
+    ul.replaceChildren();
+    LEVELS[lv].ex.forEach(([t, p]) => {
+      const li = document.createElement('li');
+      const a = document.createElement('span'); a.textContent = t;
+      const b = document.createElement('span'); b.className = 'price'; b.textContent = p;
+      li.append(a, b); ul.append(li);
+    });
+  }
+
+  function finish() {
+    phase = 'result';
+    $('qbar').style.width = '100%';
+    result = judge(ans);
+    const N = LEVELS[result.now], Pt = LEVELS[result.pot];
+    $('r-title').textContent = result.pot > result.now
+      ? 'あなたは今Lv' + result.now + '。伸ばせばLv' + result.pot + 'まで届きます'
+      : 'あなたは今の時点で、Lv' + result.now + 'の案件に届きます';
+    $('r-now-lv').textContent = 'Lv' + result.now; $('r-now-name').textContent = N.name; $('r-now-price').textContent = N.from;
+    $('r-pot-lv').textContent = 'Lv' + result.pot; $('r-pot-name').textContent = Pt.name;
+    $('r-pot-price').textContent = Pt.from; $('r-pot-unit').textContent = '';
+    const hours = ['週5時間未満', '週5〜10時間', '週10〜20時間', '週20時間以上'][ans.time];
+    $('r-why').textContent = hours + 'の作業時間なら、ここが現実的な上限です。';
+    $('r-voice').textContent = WORRY[ans.worry];
+    $('r-source').textContent = '根拠：' + C.dataDate + '時点のクラウドワークス新着案件の報酬欄。届くまでの期間は、練習と応募の量で人によって変わります。';
+    list($('r-now-ex'), result.now); list($('r-pot-ex'), result.pot);
+    const g = $('r-gap'); g.replaceChildren();
+    result.gaps.forEach((t) => { const li = document.createElement('li'); li.textContent = t; g.append(li); });
+    drawRates($('rates-me'), result.now, result.pot);
+    $('soft-lv').textContent = 'Lv' + result.now;
+    code = 'L' + result.now + 'P' + result.pot + '-T' + ans.time + '-G' + ans.goal + '-' + ans.worry;
+    $('r-code').textContent = code;
+    $('r-no').textContent = 'No. ' + code;
+
+    // 特典の受け取り期限：最初に結果が出た時刻から（やり直しても延びない。期限後は実際に渡さない）
+    deadline = S.get('deadline');
+    if (!deadline) { deadline = Date.now() + C.bonusMinutes * 60000; S.set('deadline', deadline); }
+    S.set('result', { now: result.now, pot: result.pot, code: code, at: Date.now() });
+    startTimer();
+
+    $('quiz').hidden = true;
+    $('result').hidden = false;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    track('diagnosis_complete', { level_now: result.now, level_pot: result.pot, worry: ans.worry });
+  }
+
+  function startTimer() {
+    clearInterval(tick);
+    const draw = () => {
+      const left = deadline - Date.now();
+      const over = left <= 0;
+      $('timer').classList.toggle('over', over);
+      $('t-clock').textContent = over ? '終了' : fmt(left);
+      $('t-label').textContent = over ? '特典の受け取り期限は過ぎました' : '特典の受け取り期限まで';
+      $('t-note').textContent = over ? '精密診断は、このまま予約できます。' : '期限は、最初に診断結果が出た時刻から' + C.bonusMinutes + '分です。期限内に予約した方にお渡しします。';
+      drawDock();
+      if (over) clearInterval(tick);
+    };
+    draw();
+    tick = setInterval(draw, 1000);
+  }
+
+  document.querySelectorAll('.yn').forEach((grp) => {
+    grp.addEventListener('click', (e) => {
+      const b = e.target.closest('button');
+      if (!b) return;
+      grp.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+      yn[grp.dataset.q] = b.dataset.v;
+      track('answer_' + grp.dataset.q, { value: b.dataset.v });
+      if (yn.monthly && yn.highprice && yn.freelance && $('pitch').hidden) {
+        $('pitch').hidden = false;
+        drawDock();
+        $('pitch').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  let timerexLoaded = false;
+  function showBook() {
+    $('book').hidden = false; $('soft').hidden = true;
+    drawDock();
+    $('book').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    track('booking_view', { code });
+    if (timerexLoaded) return;
+    timerexLoaded = true;
+    const wrap = $('timerex_wrap');
+    if (!C.timerexUrl) {
+      const p = document.createElement('div'); p.className = 'placeholder';
+      p.textContent = 'ここに予約カレンダーが入ります（TimeRexのURLを設定すると表示されます）。';
+      wrap.append(p); return;
+    }
+    const cal = document.createElement('div');
+    cal.id = 'timerex_calendar'; cal.dataset.url = C.timerexUrl;
+    wrap.append(cal);
+    const s = document.createElement('script');
+    s.src = 'https://asset.timerex.net/js/embed.js';
+    s.onload = () => { if (window.TimerexCalendar) window.TimerexCalendar(); };
+    document.body.appendChild(s);
+    const link = document.createElement('p'); link.className = 'note';
+    const a = document.createElement('a');
+    a.href = C.timerexUrl; a.target = '_blank'; a.rel = 'noopener';
+    a.textContent = 'カレンダーが表示されないときはこちらから予約';
+    link.append(a); wrap.append(link);
+  }
+  $('go').addEventListener('click', showBook);
+  $('self').addEventListener('click', () => {
+    $('soft').hidden = false;
+    $('soft').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    track('self_search');
+  });
+  $('copy').addEventListener('click', () => {
+    if (navigator.clipboard) navigator.clipboard.writeText(code).then(() => { $('copy').textContent = 'コピーしました'; }, () => {});
+  });
+  $('retry').addEventListener('click', () => {
+    Object.keys(ans).forEach((k) => delete ans[k]);
+    Object.keys(yn).forEach((k) => delete yn[k]);
+    document.querySelectorAll('.yn button').forEach((x) => x.setAttribute('aria-pressed', 'false'));
+    ['pitch', 'book', 'soft'].forEach((id) => { $(id).hidden = true; });
+    clearInterval(tick);
+    startQuiz();
+  });
+})();
+</script>
+</body>
+</html>
