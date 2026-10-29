@@ -7,7 +7,7 @@ window.LP_CONFIG = {
   // 特典（プロフェッショナルOS）を受け取れる期限。診断結果が出てからの分数。期限を過ぎた人には実際に渡さない
   bonusMinutes: 30,
   // Xのアカウント名（@なし）
-  xAccount: "Yuuki170314",
+  xAccount: "ONEPRICE_ch",
   // GA4の測定ID（例: G-XXXXXXX）。空なら計測しない
   ga4Id: "G-DFK5XBWTTD",
   // 案件データの取得日
